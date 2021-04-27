@@ -13,7 +13,7 @@ function Metronome() {
 
   useLayoutEffect(refreshInterval, [playClick, bpm, bpmeasureString, playing]);
 
-  console.log('rendering')
+  // console.log('rendering');
 
   function handlePlayButtonClick() {
     if (!playing) {
@@ -51,11 +51,11 @@ function Metronome() {
     if (ref.current.count % bpmeasure) {
       clickOne.play();
       ref.current.count++;
-      console.log(bpmeasure, ref.current.count);
+      // console.log(bpmeasure, ref.current.count);
     } else {
       clickTwo.play();
       ref.current.count++;
-      console.log(bpmeasure, ref.current.count);
+      // console.log(bpmeasure, ref.current.count);
     }
   }
 
