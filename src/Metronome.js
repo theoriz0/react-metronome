@@ -83,7 +83,7 @@ function Metronome() {
       <button onClick={handlePlayButtonClick}>
         {playing ? "Stop" : "Start"}
       </button>
-      <div>bpmeasure: {bpmeasureString}</div>
+      {/* <div>bpmeasure: {bpmeasureString}</div> */}
     </div>
   );
 }
